@@ -30,11 +30,7 @@ public class DeviceController {
             return ResponseUtils.authFailed();
         }
 
-        try {
-            String alarmId = deviceAlarmService.postAlarm(deviceAlarmRequest);
-            return ResponseUtils.success("ok");
-        } catch (Exception e) {
-            return ResponseUtils.systemError();
-        }
+        String alarmId = deviceAlarmService.postAlarm(deviceAlarmRequest);
+        return ResponseUtils.success("ok");
     }
 }
