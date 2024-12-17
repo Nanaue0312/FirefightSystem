@@ -1,4 +1,4 @@
-package com.firefight.controller.impl;
+package com.firefight.service.impl;
 
 import com.firefight.model.request.DeviceAlarmRequest;
 import com.firefight.service.DeviceAlarmService;
